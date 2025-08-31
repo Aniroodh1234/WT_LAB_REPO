@@ -1,0 +1,40 @@
+/* Universal Selector */
+* {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Element Selector */
+p {
+  color: darkblue;
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+/* ID Selector */
+#main-title {
+  color: crimson;
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Class Selector */
+.intro {
+  background: #f4f4f4;
+  padding: 10px;
+  border-left: 4px solid teal;
+}
+
+/* Descendant Selector */
+.container ul li {
+  color: green;
+  list-style-type: square;
+  margin-left: 20px;
+}
+
+/* Pseudo-class */
+a:hover {
+  color: orange;
+  text-decoration: underline;
+}

@@ -1,0 +1,39 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.emoji-table {
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.emoji-table th,
+.emoji-table td {
+    border: 1px solid #ddd;
+    padding: 16px;
+    font-size: 1.1rem;
+}
+
+.emoji-table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.emoji {
+    font-size: 40px;
+}
+
+.emoji-table tr:hover {
+    background-color: #f1f1f1;
+}

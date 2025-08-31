@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS box model</title>
+    <style>
+        .sub-container1{
+            height:300px;
+            width: 300px;
+            border: 5px solid crimson;
+        }
+        .sub-container2{
+            height:300px;
+            width:300px;
+            border:5px solid gold;
+        }
+        .sub-container3{
+            height:300px;
+            width:300px;
+            border: 5px solid maroon;
+            margin-left:200px;
+        }
+        .head{
+            height:50px;
+            width:500px;
+            border:5px solid black;
+            padding:50px 50px 50px 50px;
+        }
+        #para{
+            height:30px;
+            width:240px;
+            border:5px solid black;
+            padding:50px 50px 50px 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main container">
+        <div class="sub-container1">Box 1</div>
+        <hr>
+        <div class="sub-container2">Box 2</div>
+        <hr>
+        <div class="sub-container3">Box 3</div>
+        <hr>
+        <h1 class="head">The capital of India is New Delhi</h1>
+        <hr>
+        <p id="para">The capital of Belgium is Brussels</p>
+    </div>
+</body>
+</html>
