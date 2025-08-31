@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amazon Cart</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+
+    .cart-container {
+      max-width: 1000px;
+      margin: 30px auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #232f3e;
+    }
+
+    .cart-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #ddd;
+      padding: 15px 0;
+    }
+
+    .cart-item img {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+    }
+
+    .item-details {
+      flex: 1;
+      margin-left: 20px;
+    }
+
+    .item-details h3 {
+      margin: 0;
+      font-size: 18px;
+    }
+
+    .item-details p {
+      margin: 5px 0;
+      color: #555;
+    }
+
+    .item-actions {
+      text-align: right;
+    }
+
+    .price {
+      font-size: 18px;
+      font-weight: bold;
+      color: #b12704;
+    }
+
+    .quantity {
+      margin: 10px 0;
+    }
+
+    select {
+      padding: 5px;
+    }
+
+    .remove {
+      color: #007185;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    /* Cart total */
+    .cart-total {
+      text-align: right;
+      margin-top: 20px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .checkout-btn {
+      display: block;
+      margin-left: auto;
+      margin-top: 10px;
+      background: #ffd814;
+      border: 1px solid #fcd200;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .checkout-btn:hover {
+      background: #f7ca00;
+    }
+  </style>
+</head>
+<body>
+  <div class="cart-container">
+    <h1>Your Amazon Cart</h1>
+
+    <!-- Product 1 -->
+    <div class="cart-item">
+      <img src="fitness_band.jpeg" alt="Laptop">
+      <div class="item-details">
+        <h3>Dell Inspiron Laptop</h3>
+        <p>15.6-inch, 8GB RAM, 512GB SSD</p>
+        <span class="price">₹58,999</span>
+      </div>
+      <div class="item-actions">
+        <div class="quantity">
+          Qty: <select><option>1</option><option>2</option><option>3</option></select>
+        </div>
+        <div class="remove">Remove</div>
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="cart-item">
+      <img src="headphones.jpeg" alt="Headphones">
+      <div class="item-details">
+        <h3>Boat Rockerz 450</h3>
+        <p>Bluetooth Wireless Headphones</p>
+        <span class="price">₹1,499</span>
+      </div>
+      <div class="item-actions">
+        <div class="quantity">
+          Qty: <select><option>1</option><option>2</option><option>3</option></select>
+        </div>
+        <div class="remove">Remove</div>
+      </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="cart-item">
+      <img src="ipad.jpeg"Mobile">
+      <div class="item-details">
+        <h3>iPhone 14</h3>
+        <p>128GB, Midnight Black</p>
+        <span class="price">₹69,999</span>
+      </div>
+      <div class="item-actions">
+        <div class="quantity">
+          Qty: <select><option>1</option><option>2</option><option>3</option></select>
+        </div>
+        <div class="remove">Remove</div>
+      </div>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="cart-item">
+      <img src="laptop.webp" alt="Smartwatch">
+      <div class="item-details">
+        <h3>Noise ColorFit Pro</h3>
+        <p>Smartwatch with Heart Rate Monitor</p>
+        <span class="price">₹2,999</span>
+      </div>
+      <div class="item-actions">
+        <div class="quantity">
+          Qty: <select><option>1</option><option>2</option><option>3</option></select>
+        </div>
+        <div class="remove">Remove</div>
+      </div>
+    </div>
+
+    <!-- Product 5 -->
+    <div class="cart-item">
+      <img src="samsung.avif" alt="Shoes">
+      <div class="item-details">
+        <h3>Adidas Running Shoes</h3>
+        <p>Lightweight, Size 9</p>
+        <span class="price">₹4,299</span>
+      </div>
+      <div class="item-actions">
+        <div class="quantity">
+          Qty: <select><option>1</option><option>2</option><option>3</option></select>
+        </div>
+        <div class="remove">Remove</div>
+      </div>
+    </div>
+
+    <!-- Product 6 -->
+    <div class="cart-item">
+      <img src="book.jpeg" alt="Book">
+      <div class="item-details">
+        <h3>Atomic Habits</h3>
+        <p>By James Clear</p>
+        <span class="price">₹499</span>
+      </div>
+      <div class="item-actions">
+        <div class="quantity">
+          Qty: <select><option>1</option><option>2</option><option>3</option></select>
+        </div>
+        <div class="remove">Remove</div>
+      </div>
+    </div>
+
+    <!-- Product 7 -->
+    <div class="cart-item">
+      <img src="camera.jpeg" alt="Camera">
+      <div class="item-details">
+        <h3>Canon EOS 1500D</h3>
+        <p>DSLR Camera, 18-55mm Lens</p>
+        <span class="price">₹35,999</span>
+      </div>
+      <div class="item-actions">
+        <div class="quantity">
+          Qty: <select><option>1</option><option>2</option><option>3</option></select>
+        </div>
+        <div class="remove">Remove</div>
+      </div>
+    </div>
+
+    <!-- Product 8 -->
+    <div class="cart-item">
+      <img src="bag.jpeg" alt="Backpack">
+      <div class="item-details">
+        <h3>Wildcraft Backpack</h3>
+        <p>32L, Water Resistant</p>
+        <span class="price">₹1,299</span>
+      </div>
+      <div class="item-actions">
+        <div class="quantity">
+          Qty: <select><option>1</option><option>2</option><option>3</option></select>
+        </div>
+        <div class="remove">Remove</div>
+      </div>
+    </div>
+
+    <!-- Cart Total -->
+    <div class="cart-total">
+      Subtotal (8 items): ₹1,75,593
+    </div>
+    <button class="checkout-btn">Proceed to Buy</button>
+  </div>
+</body>
+</html>
